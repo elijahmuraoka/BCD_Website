@@ -1,5 +1,5 @@
-import './globals.css';
+import './tailwind.css';
 
 export default function Home() {
-    return <div className="text-4xl">Hello World</div>;
+    return <div className="text-center text-6xl">Hello World</div>;
 }
