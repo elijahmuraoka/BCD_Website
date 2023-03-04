@@ -1,11 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+    mode: 'jit',
     content: [
-        './src/app/**/*.{js,ts,jsx,tsx}', // Note the addition of the `app` directory.
-        './src/pages/**/*.{js,ts,jsx,tsx}',
-        './src/components/**/*.{js,ts,jsx,tsx}',
-    ],
-    purge: [
         './src/app/**/*.{js,ts,jsx,tsx}', // Note the addition of the `app` directory.
         './src/pages/**/*.{js,ts,jsx,tsx}',
         './src/components/**/*.{js,ts,jsx,tsx}',
@@ -17,7 +13,12 @@ module.exports = {
             lg: '976px',
             xl: '1440px',
         },
-        extend: {},
+        extend: {
+            colors: {
+                gRedStart: '#ff5858',
+                gRedEnd: '#ffc8c8',
+            },
+        },
     },
     plugins: [],
 };
