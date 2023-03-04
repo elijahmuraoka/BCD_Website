@@ -5,7 +5,7 @@ import { animated } from '@react-spring/web';
 
 interface CtaButtonProps {
     type: string;
-    label: string;
+    label?: string;
     className?: string;
 }
 
