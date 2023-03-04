@@ -3,15 +3,13 @@ import RestaurantIcon from '@mui/icons-material/Restaurant';
 import FastfoodIcon from '@mui/icons-material/Fastfood';
 import { animated } from '@react-spring/web';
 
-export default function CtaButton({
-    type,
-    label,
-    className,
-}: {
+interface CtaButtonProps {
     type: string;
     label?: string;
     className?: string;
-}) {
+}
+
+export default function CtaButton({ type, label, className }: CtaButtonProps) {
     const baseClasses =
         'group flex flex-row justify-between duration-300 border-2 py-2 px-4 font-semibold rounded-xl shadow-md hover:shadow-xl';
     function buildByType() {
